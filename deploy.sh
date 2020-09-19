@@ -12,13 +12,14 @@ cd dist
 # 部署到自定义域域名
 # echo 'www.example.com' > CNAME
 
+git init
 git add .
 git commit -m 'auto update.'
 
 # 部署到 https://<USERNAME>.github.io
-git push -f git@github.com:qqphp-com/vue-community.github.io master
+git push -f git@github.com:qqphp-com.github.io master:gh-pages
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:qqphp-com/vue-community.git master:master
+#git push -f git@github.com:qqphp-com/vue-community.git master:master
 
 cd -
