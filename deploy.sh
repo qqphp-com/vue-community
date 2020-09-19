@@ -7,14 +7,13 @@ set -e
 npm run build
 
 # cd 到构建输出的目录下 
-cd dist
+# cd dist
 
 # 部署到自定义域域名
 # echo 'www.example.com' > CNAME
 
-git init
-git add -A
-git commit -m 'deploy'
+git add .
+git commit -m 'auto update.'
 
 # 部署到 https://<USERNAME>.github.io
 git push -f git@github.com:qqphp-com/vue-community.git master
